@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Ma Première Page Web</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <h1 id="MonTitre">Titre Principal</h1>
+      <h2>Sous-Titre 1</h2>
+      <h3>Sous-Titre 2</h3>
+    </header>
+  
+    <nav>
+      <ul>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+        <li><a href="#section4">Section 4</a></li>
+        <li><a href="https://richard.education">Exemple de lien vers un excellent site</a></li>
+      </ul>
+    </nav>
+  
+    <section id="section1">
+      <h2>Section 1</h2>
+      <p>Ceci est un paragraphe de texte. <em>Ceci est un texte en italique.</em> <strong>Ceci est un texte en gras.</strong></p>
+      <p>Ceci est le contenu de la première section de ma page.</p>
+    </section>
+  
+    <section id="section2">
+      <h2>Section 2</h2>
+      <p>Voici le contenu de la deuxième section de ma page.</p>
+      <h2 class="special">Listes</h2>
+      <h3>Liste non ordonnée</h3>
+    
+      <ul>
+        <li>Élément 1</li>
+        <li>Élément 2</li>
+        <li>Élément 3</li>
+      </ul>
+    
+      <h3>Liste ordonnée</h3>
+      <ol>
+        <li>Étape 1</li>
+        <li>Étape 2</li>
+        <li>Étape 3</li>
+      </ol>
+    </section>
+    
+    <section id="section3">
+      <h2>Section 3</h2>
+      <p>Le contenu de la troisième section se trouve ici.</p>
+      <h2>Liens Internes</h2>
+      <p>Cliquez sur le <a href="#section1">lien vers la Section 1</a>.</p>
+      <img src="Maths.jpeg" alt="Exemple d'image">
+       <p>Cliquez sur le <a href="#MonTitre">lien vers le titre principal</a>.</p>
+    </section>
+  
+    <section id="section4">
+      <h2>Tableau avec Fusion de Cellules</h2>
+      <table>
+        <tr>
+          <th colspan="2">Titre Fusionné</th>
+          <th>Titre 2</th>
+        </tr>
+        <tr>
+          <td rowspan="2">Row 1, Cell 1</td>
+          <td>Row 1, Cell 2</td>
+          <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+          <td>Row 2, Cell 2</td>
+          <td>Row 2, Cell 3</td>
+        </tr>
+      </table>
+    </section>
+    <button id ="btn" class="favorite styled" type="button">Un gros bouton</button>
+    <button id ="btn2" class="favorite styled" type="button">Un autre bouton</button>
+
+    <footer>
+      <p>&copy; 2025 Ma Page Web. Tous droits réservés.</p>
+    </footer>
+  </body>
+
+</html>
+
+<script>
+  const bouton = document.getElementById("btn");
+  bouton.addEventListener("click", () => {
+    document.getElementById("section2").style.display = 'none'; 
+  })
+  const bouton2 = document.getElementById("btn2");
+  bouton2.addEventListener("click", () => {
+    document.getElementById("section2").style.display = '';
+  })
+
+</script>
