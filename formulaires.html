@@ -24,7 +24,7 @@
     </select>
 
     <p>Vous pouvez faire un commentaire <input type="text" id="commentaire" name="commentaire_utilisateur"></p>
-    <p>Entrez votre email <input type="email" id="email" name="email_utilisateur" value="coucou@bof.fr"></p>
+    <p><label for="email" id="label_email" >Entrez votre email </label> <input type="email" id="email" name="email_utilisateur" value="coucou@bof.fr"></p>
     <p>
       <label for="commentaire_long">Vous pouvez même faire un commentaire très long </label>
       <textarea id="commentaire_long" name="commentaire_long_utilisateur"></textarea>
@@ -33,9 +33,13 @@
       <button class="bouton_joli" type="submit">Valider le formulaire</button>
     </div>
     <p></p>
-    <div class="button">
-      <button id="bouton_java" class="bouton_bizarre" onclick="action_javascript()">Faire disparaître une fenêtre</button>
-    </div>
+    
     </form>
+    <div class="button">
+      <button id="bouton_java_enlever" class="bouton_bizarre" onclick="action_javascript()">Faire disparaître une fenêtre</button>
+    </div>
+    <div class="button">
+      <button id="bouton_java_remettre" class="bouton_bizarre" onclick="action_javascript()" style="display:none">Faire apparaître la fenêtre</button>
+    </div>
   </body>
 </html>
