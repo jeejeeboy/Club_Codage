@@ -1,0 +1,78 @@
+/* Exemple de feuille de style CSS pour le fichier formulaire.html*/
+
+/* Styles pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Styles pour les titres */
+h1 {
+    color: #4caf50;
+}
+
+h2 {
+  color: rgb(112 25 100 / 70%);
+  text-align: center;
+}
+
+
+h3 {
+  color: red;
+}
+
+/* Styles pour les paragraphes */
+p {
+    font-size: 16px;
+    line-height: 2.5;
+}
+
+/* Styles pour les liens */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Styles pour les éléments de liste non ordonnée */
+ul {
+    list-style-type: square; /* Autres options : disc, circle */
+}
+
+/* Styles pour les éléments de liste ordonnée */
+ol {
+    list-style-type: decimal; /* Autres options : lower-alpha, upper-alpha, lower-roman, upper-roman */
+}
+
+
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 20px 0;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #5e5959;
+}
+
+img {
+ display : block;
+ margin: 0px auto;
+}
+
+h2.special{
+  text-align: start;
+  color : green;
+}
+ bouton.bouton_joli{
+  background-color: #4caf50;
+
+
+ }
