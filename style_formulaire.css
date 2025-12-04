@@ -1,0 +1,45 @@
+/* Exemple de feuille de style CSS pour le fichier formulaire.html*/
+
+/* Styles pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Styles pour les titres */
+h1 {
+    color: #4caf50;
+}
+
+h2 {
+  color: rgb(112 25 100 / 70%);
+  text-align: center;
+}
+
+
+h3 {
+  color: red;
+}
+
+/* Styles pour les paragraphes */
+p {
+    font-size: 16px;
+    line-height: 2.5;
+}
+
+
+ .bouton_joli{
+    color:red;
+    background-color: #4caf50;
+    display: block;
+    margin: auto;
+ }
+
+ .bouton_bizarre{
+    color:rgb(196, 187, 187);
+    background-color: #070807;
+    display: block;
+    margin: auto;
+ }
+ 
