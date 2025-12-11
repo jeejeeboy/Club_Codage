@@ -1,45 +1,79 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Club Codage</title>
-    <link rel="stylesheet" href="style_formulaire.css">
-    <script type="text/javascript" src="formulaire.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Club Codage</title>
+  <link rel="stylesheet" href="style_formulaire.css">
+  <script type="text/javascript" src="formulaire.js"></script>
+</head>
 
-  <body>
-    <header>
-      <h1 id="MonTitre">Jeu de culture générale</h1>      
-    </header>
+<body>
+  <header>
+    <h1 id="MonTitre">Jeu de culture générale</h1>
+  </header>
 
-    <form action="">
+  <form action="">
 
-    <label for="selection_theme">Choisir un thème:</label>
-    <select name="themes" id="selection_theme">
+    <div id="choix_theme">
+<h2>Choix du thème</h2>
+      <label for="selection_theme">Choisir un thème:</label>
+      <select name="themes" id="selection_theme">
         <option value="">--Veuillez choisir au moins une option--</option>
         <option value="maths">Mathématiques</option>
         <option value="francais">Français</option>
         <option value="histoire">Histoire</option>
-    </select>
+      </select>
 
-    <p>Vous pouvez faire un commentaire <input type="text" id="commentaire" name="commentaire_utilisateur"></p>
-    <p><label for="email" id="label_email" >Entrez votre email </label> <input type="email" id="email" name="email_utilisateur" value="coucou@bof.fr"></p>
-    <p>
-      <label for="commentaire_long">Vous pouvez même faire un commentaire très long </label>
-      <textarea id="commentaire_long" name="commentaire_long_utilisateur"></textarea>
-    </p>
-    <div class="button">
+      <p>Vous pouvez faire un commentaire <input type="text" id="commentaire" name="commentaire_utilisateur"></p>
+    </div>
+    <div id="informations">
+      <h2>Informations à saisir</h2>
+      <p><label for="email" id="label_email">Entrez votre email </label> <input type="email" id="email"
+          name="email_utilisateur" value="coucou@bof.fr"></p>
+      <p>
+        <label for="commentaire_long">Vous pouvez même faire un commentaire très long </label>
+        <textarea id="commentaire_long" name="commentaire_long_utilisateur"></textarea>
+      </p>
+    </div>
+    <div id="Propositions">
+            <h2>Différentes propositions</h2>
+      <p>Les boutons "Radio" permettent de proposer un choix parmi plusieurs<br>
+        <input type="radio" id="option1" name="groupeChoix" value="choix1">
+        <label for="option1">Option 1</label>
+        <input type="radio" id="option2" name="groupeChoix" value="choix2">
+        <label for="option2">Option 2</label>
+        <input type="radio" id="option3" name="groupeChoix" value="choix3" checked>
+        <label for="option3">Option 3</label>
+      </p>
+      <p>
+        Les cases à cocher sont aussi couramment utilisées dans les formulaires<br>
+
+        <input type="checkbox" id="Case_a_cocher1" name="case1" value="Proposition1">
+        <label for="Case_a_cocher1">Proposition n°1</label><br>
+        <input type="checkbox" id="Case_a_cocher2" name="case2" value="Proposition2">
+        <label for="Case_a_cocher2">Proposition n°2</label><br>
+        <input type="checkbox" id="Case_a_cocher3" name="case3" value="Proposition3" checked>
+        <label for="Case_a_cocher3">Proposition n°3</label><br>
+        <input type="checkbox" id="Case_a_cocher4" name="case4" value="Proposition4">
+        <label for="Case_a_cocher4">Proposition n°4</label><br>
+
+      </p>
+    </div>
+    <div id="validations" class="button">
       <button class="bouton_joli" type="submit">Valider le formulaire</button>
     </div>
     <p></p>
-    
-    </form>
-    <div class="button">
-      <button id="bouton_java_enlever" class="bouton_bizarre" onclick="action_javascript()">Faire disparaître une fenêtre</button>
-    </div>
-    <div class="button">
-      <button id="bouton_java_remettre" class="bouton_bizarre" onclick="action_javascript()" style="display:none">Faire apparaître la fenêtre</button>
-    </div>
-  </body>
+
+  </form>
+  <div class="button">
+    <button id="bouton_java_enlever" class="bouton_bizarre" onclick="action_javascript()">Faire disparaître une
+      fenêtre</button>
+  </div>
+  <div class="button">
+    <button id="bouton_java_remettre" class="bouton_bizarre" onclick="action_javascript()" style="display:none">Faire
+      apparaître la fenêtre</button>
+  </div>
+</body>
+
 </html>

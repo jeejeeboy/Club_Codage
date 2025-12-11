@@ -2,14 +2,14 @@
 
 /* Styles pour le corps de la page */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
 }
 
 /* Styles pour les titres */
 h1 {
-    color: #4caf50;
+  color: #4caf50;
 }
 
 h2 {
@@ -22,24 +22,51 @@ h3 {
   color: red;
 }
 
-/* Styles pour les paragraphes */
-p {
-    font-size: 16px;
-    line-height: 2.5;
+/* Styles pour les divisions */
+div {
+  border: solid black 1px;
+  border-radius: 30px;
+  margin: 20px;
+  padding: 30px;
+  box-shadow: 5px 5px 10px #5d635d;
+}
+
+/* Styles pour une division particulière, par sa classe */
+div.button {
+  border: none;
+  box-shadow: none;
+  padding: 0px;
+}
+
+/* Styles pour une division vraiment particulière, par son id*/
+#validations {
+  border: none;
+  background-color: rgb(175, 234, 234);
+  width: 400px;
+  margin: auto;
+  box-shadow: 10px 10px 20px #332a37;
+  padding: 5px;
+
 }
 
 
- .bouton_joli{
-    color:red;
-    background-color: #4caf50;
-    display: block;
-    margin: auto;
- }
+/* Styles pour les paragraphes */
+p {
+  font-size: 16px;
+  line-height: 2.5;
+}
 
- .bouton_bizarre{
-    color:rgb(196, 187, 187);
-    background-color: #070807;
-    display: block;
-    margin: auto;
- }
- 
+
+.bouton_joli {
+  color: red;
+  background-color: #4caf50;
+  display: block;
+  margin: auto;
+}
+
+.bouton_bizarre {
+  color: rgb(196, 187, 187);
+  background-color: #070807;
+  display: block;
+  margin: auto;
+}
